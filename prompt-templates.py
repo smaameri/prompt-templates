@@ -42,8 +42,7 @@ print(prompt_template.format(adjective='funny', content='chickens'))
 
 print(f"\n{green}5. Prompt Template with f-string and Variables --------{white}")
 prompt_template = PromptTemplate.from_template(
-    f'Tell me a {{adjective}} joke about {{content}}',
-    template_format='f-string'
+    f'Tell me a {{adjective}} joke about {{content}}'
 )
 print(prompt_template.format(adjective="funny", content="chickens"))
 
@@ -52,8 +51,7 @@ print(f"\n{green}6. Prompt Template with f-string and template and python variab
 today = date.today()
 
 prompt_template = PromptTemplate.from_template(
-    f'Todays Date: {today}: Tell me a {{adjective}} joke about {{content}}',
-    template_format='f-string'
+    f'Todays Date: {today}: Tell me a {{adjective}} joke about {{content}}'
 )
 print(prompt_template.format(adjective="funny", content="chickens"))
 
